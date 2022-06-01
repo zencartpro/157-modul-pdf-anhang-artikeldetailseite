@@ -1,0 +1,243 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>pdf Anhang auf der Artikeldetailseite 2.2.0 für Zen Cart 1.5.7 deutsch</title>
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="content-language" content="de">
+<meta name="description" content="per Admin hochladbares pdf auf der Artikeldetailseite zum Download anbieten für Zen Cart 1.5.7 deutsch">
+<link rel="stylesheet" type="text/css" href="includes/css/stylesheet.css">  
+<script type="text/javascript" src="includes/jscript/jscript_tabs.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+<h1>pdf Anhang auf der Artikeldetailseite 2.2.0 für Zen Cart 1.5.7 deutsch</h1>
+</div>
+
+<div id="slidetabsmenu" style="display: none;">
+<ul>
+  <li> <a onClick="expandcontent('sc1', this)" href="javascript:void(0)"><span>Sinn und Zweck</span></a></li>
+  <li> <a onClick="expandcontent('sc2', this)" href="javascript:void(0)"><span>Installation</span></a></li>
+ 
+   <li> <a onClick="expandcontent('sc4', this)" href="javascript:void(0)"><span>Deinstallation</span></a></li>
+  <li> <a onClick="expandcontent('sc5', this)" href="javascript:void(0)"><span>Download</span></a></li>
+  <li> <a onClick="expandcontent('sc6', this)" href="javascript:void(0)"><span>Unterstützen</span></a></li>
+ </ul>
+</div>
+<br style="clear: both;">
+
+<!--Begin tabcontainer-->
+<div id="tabcontentcontainer">
+
+<!--Begin sc1-->
+<div class="tabcontent" id="sc1" style="display: block;">
+<div class="textcontent">
+<div class="regularlist">
+
+<h2>Sinn und Zweck dieses Moduls</h2>
+
+
+<p>Mit dieser Erweiterung kann zu einem Artikel über die normale Artikelbearbeitung in der Zen Cart Administration ein pdf Anhang hochgeladen werden.<br>
+Der Anhang kann mit einem Beschreibungstext versehen werden und wird dann auf der Artikeldetailseite unterhalb der Artikelbeschreibung für den Besucher zum Download angezeigt.<br>
+Nützlich z.B. wenn zu Artikeln im Shop ein pdf Datenblatt zum Download abgeboten werden soll.
+</p>
+<h3>Copyright,  Lizenz</h3>
+<p>Copyright dieser Moduls für Zen Cart 1.5.7 deutsch<br>
+(c) 2019-2022 webchills (<a href="http://www.webchills.at" target="_blank">www.webchills.at</a>)</p>
+<p>Credits: Andrea Giovanelli</p>
+<p> Portions Copyright (c) 2003 osCommerce<br>
+  Portions Copyright     (c) 2003-2022 Zen Cart</p>
+<p>This contribution is subject to version 3.0 of the GPL license available through the world-wide-web at the following url:<br>
+  <a href="http://www.zen-cart-pro.at/license/3_0.txt">http://www.zen-cart-pro.at/license/3_0.txt</a></p>
+</div>
+</div>
+</div>
+<!--End sc1-->
+
+<!--Begin sc2-->
+<div class="tabcontent" id="sc2" style="display: block;">
+<div class="textcontent">
+<div class="regularlist">
+
+<h2>Installation</h2>
+<h3>Voraussetzungen</h3>
+  <br>
+  <p>Dieses Modul ist<strong> nur für Zen Cart 1.5.7 deutsch geeignet</strong>
+  <br><br/>
+  <strong>WICHTIG:</strong><br>
+  <br>
+    Für den Einbau dieses Moduls sollten Sie über folgende Werkzeuge verfügen:<br>
+  <br>
+    1) Ein guter Texteditor. <br>
+    Damit ist nicht das in Windows enthaltene Notepad oder Microsoft Word gemeint.<br>
+    Sie benötigen einen Texteditor, der utf-8 versteht und auch im Format utf-8 ohne BOM abspeichern kann.<br>
+    Meine Empfehlung: <a href="http://www.ultraedit.com/loc/de/index_de.html" target="_blank">UltraEdit</a> (kostenlose 30 Tage Testversion verfügbar)<br>
+    Ebenfalls gut geeignet ist der kostenlose Texteditor <a href="http://notepad-plus.sourceforge.net/de/site.htm" target="_blank">Notepad++ </a><br>
+  </p>
+  <p>2) Ein Tool zum Vergleichen von Dateien<br>
+    Bei der Installation dieses Moduls ist es erforderlich, dass Sie den   Inhalt einiger Ihrer bestehenden Zen Cart Dateien mit dem Inhalt der   neuen Moduldateien vergleichen und die Änderungen zusammenführen   ("mergen").<br>
+    Meine Empfehlung: <a href="http://www.scootersoftware.com/" target="_blank">BeyondCompare</a> (kostenlose 30 Tage Testversion verfügbar)<br>
+    Ebenfalls gut geeignet ist das kostenlose Programm <a href="http://winmerge.org/" target="_blank">WinMerge </a></p>
+  <p><br>
+  <strong>Empfehlung:</strong><br>
+  <br>
+  Dieses Modul erst in einem Testsystem einbauen und dort   konfigurieren/testen und endgültig an die eigenen Wünsche anpassen.        Erst dann in einem Liveshop einsetzen! Sichern Sie unbedingt alle   Dateien Ihres Shops per FTP und sichern Sie die Datenbank mit phpMyAdmin   oder anderen geeigneten Tools!</p>
+<div id="warning"><b>WICHTIG</b><br>
+Vor dem Einbau dieser Änderungen:<br>
+BACKUP von Shop und Datenbank machen! <br>
+Keine Haftung, Verwendung auf eigene Gefahr!<br>
+BACKUP gemacht? Ok, dann weiterlesen...
+</div>
+<p>Die Installation erfolgt in folgenden Schritten. Halten Sie diesen Ablauf ein!</p>
+<p>1)<br>
+Im Ordner SQL die install.sql mit einem Texteditor öffnen und den Inhalt   ins Eingabefeld kopieren unter Admin &gt; Tools &gt; SQL Patches   installieren<br>
+Absenden<br>
+Dadurch werden die nötigen Datenbankeinträge vorgenommen.</p>
+<p>2)<br>
+  Folgende Datei aus dem Shopverzeichnis herunterladen:<br>
+  includes/configure.php<br>
+  <br>
+  Mit einem Texteditor öffnen und folgenden Eintrag hinzufügen (z.B nach dem Eintrag define('DIR_FS_CATALOG', '/abcd/');)
+</p>
+<p>define('DIR_WS_PDF_ATTACHMENTS', 'pdf-attachments/');</p>
+<p>Geänderte includes/configure.php wieder hochladen. Diese Datei ist normalerweise schreibgeschützt, daher vor dem Hochladen der bestehenden Datei Schreibrechte geben (chmod 777).<br>
+  Nach dem Hochladen wieder den Schreibschutz setzen (chmod 444)
+</p>
+<p>3)<br>
+Folgende Datei aus dem Shopverzeichnis herunterladen:<br>
+DEINADMIN/includes/configure.php<br>
+DEINADMIN steht dabei für den Namen Ihres Adminverzeichnisses
+<br>
+<br>
+Mit einem Texteditor öffnen und folgenden Eintrag hinzufügen (z.B nach dem Eintrag define('DIR_FS_CATALOG', '/abcd/');) </p>
+<p>define('DIR_FS_CATALOG_PDF_ATTACHMENTS', 'xxx/xxx/xxx/xxx/pdf-attachments/');</p>
+<p>Gemeint ist hier der vollständige Pfad zum Verzeichnis pdf-attachments im Shopverzeichnis </p>
+<p>Den vollständigen Pfad zum Shopverzeichnis sehen Sie im Eintrag DIR_FS_CATALOG darüber, z.B.:<br/>
+define('DIR_FS_CATALOG', '/var/html/user12345/shop/');</p>
+<p>Für die neue Definition DIR_FS_CATALOG_PDF_ATTACHMENTS verwenden Sie exakt denselben Pfad und hängen einfach noch pdf-attachments/ an, z.B.</p>
+<p>define('DIR_FS_CATALOG_PDF_ATTACHMENTS', '/var/html/user12345/shop/pdf-attachments/');</p>
+<p>Geänderte DEINADMIN/includes/configure.php wieder hochladen. Diese Datei ist normalerweise schreibgeschützt, daher vor dem Hochladen der bestehenden Datei Schreibrechte geben (chmod 777).<br>
+  Nach dem Hochladen wieder den Schreibschutz setzen (chmod 444) </p>
+<p>4) <br>
+  Im Ordner NEUE DATEIEN den   Ordner DEINADMIN auf den Namen Ihres admin Verzeichnisses   umbenennen.<br>
+  Dann in der vorgegebenen Struktur ins Shopverzeichnis hochladen, dadurch werden keine bestehenden Dateien überschrieben.<br>
+  Dem Ordner pdf-attachments nun Schreibrechte geben (chmod 777)
+</p>
+<p>5)<br>
+  Im Ordner GEAENDERTE DATEIEN den Ordner namens DEINTEMPLATE auf das   im Shop verwendete Template umbennen (z.B. classic, ...).   <br>
+  Falls Sie im Shop das Template responsive classic verwenden, dann verwenden Sie den Ordner DEINTEMPLATE_RESPONSIVE
+</p>
+<p>Den Ordner DEINADMIN auf den Namen Ihres admin Verzeichnisses   umbenennen.<br>
+  Wenn Sie Zen Cart 1.5.7 gerade frisch installiert haben und noch   keinerlei Änderungen an den Dateien vorgenommen haben, können Sie nun  alle Dateien/Ordner aus dem Ordner GEAENDERTE DATEIEN in der   vorgegebenen Struktur in die Zen Cart Installation hochladen. Dabei   werden dann etliche Dateien überschrieben.<br>
+  Wenn Sie Zen Cart 1.5.7 schon länger im Einsatz haben und schon einmal   Änderungen an Dateien vorgenommen oder andere Module eingebaut haben,   dann laden Sie die Dateien KEINESFALLS einfach so hoch. <br>
+  Vergleichen Sie stattdessen alle Dateien im Ordner GEAENDERTE DATEIEN mit den   entsprechenden Dateien in Ihrem Shop und nehmen Sie die Änderungen   manuell per WinMerge oder BeyondCompare vor.<br>
+  Dann spielen Sie die geänderten Dateien in der gezeigten Struktur ein.</p>
+<p>6)<br>
+  In der Zen Cart Administration steht nun beim Bearbeiten eines Artikels eine neue Funktionalität für das Hochladen eines pdfs zum Artikel zur Verfügung. Sie funktioniert analog zum Hochladen eines Artikelbildes.<br>
+  Tragen Sie im Feld Name für pdf Anhang einen Beschreibungstext ein, der später auf der Artikeldetailseite angezeigt werden wird. Wenn Sie im Shop mehrere Sprachen aktiv haben stehen Eingabefelder für alle Sprachen zur Verfügung (analog zum Artikelnamen).<br>
+  Wählen Sie bei Datei für pdf Anhang mit Durchsuchen ein pdf von Ihrer Festplatte 
+  aus und aktualisieren Sie den Artikel.  </p>
+<p>Das pdf wird standardmäßig in den Ordner pdf-attachments hochgeladen.</p>
+<p>Genau wie bei den Artikelbildern könnte auch hier mit Unterordnern gearbeitet werden (z.B. eigene Unterordner für die pdfs der verschiedenen Hersteller). Wenn Sie mit Unterordnern arbeiten wollen, dann legen Sie im Ordner pdf-attachments entsprechende Unterordner an. Achten Sie darauf, auch diesen Unterordnern Schreibrechte (chmod 777) zu geben. Sobald Unterordner vorhanden sind werden diese im Dropdown Uploadverzeichnis auswählbar sein.<br>
+  <br>
+  Auf der Artikeldetailseite erscheint - falls ein pdf hinterlegt wurde - unterhalb der Artikelbeschreibung Ihr eingegebener Beschreibungstext und ein pdf Symbol zum Download der Datei.<br>
+  <br>
+  Unter Webshop &gt; Artikeltypen &gt; Product General &gt; Layouteinstellungen kann die Anzeige auf der Artikeldetailseite komplett deaktiviert werden.
+  <br>
+  <br>
+  Hinweis zu Dateitypen:<br>
+  Für den Dateiupload sind standardmäßig nur pdf erlaubt. Wenn das ganze auch für andere Dateitypen genutzt werden soll, die Dateitypen in folgender Datei entsprechend ändern:<br>
+  DEINADMIN/includes/modules/new_product_preview.php<br>
+  $products_pdf_attachment-&gt;set_extensions(array('pdf','PDF'));  <br>
+  <br>
+  Hinweis zu Dateigrößen:<br>
+  Für den Upload gelten dieselben Dateigrößenbeschränkungen wie beim Upload von Artikelbildern.<br>
+  Standardmäßig 
+  ist die unter Konfiguration &gt; Maximale Werte &gt; Größe für Dateiupload auf 2 MB gesetzt (2048000).<br>
+  Sollen größere pdfs verwendet werden, diesen Wert nach Wunsch erhöhen.
+  <br>
+  <br>
+</p>
+
+  </div>
+</div>
+</div>
+
+<!--End sc2-->
+
+
+
+<!--Begin sc4-->
+<div class="tabcontent" id="sc4" style="display: block;">
+<div class="textcontent">
+<div class="regularlist">
+
+<h2>DEINSTALLATION</h2>
+<p>1.<br>
+Die Datei uninstall.sql im Ordner SQL mit einem Texteditor öffen und den Inhalt kopieren</p>
+<p>2.<br>
+  Zen Cart Administration öffnen und unter Tools &gt; SQL Patches installieren den Inhalt ins Feld hineinkopieren und absenden.</p>
+<p>3.<br>
+  Alle von diesem Modul neu angelegten Dateien vom Server löschen.<br>
+  Alle von diesem Modul geänderten Dateien wieder mit den Originalversionen bzw. den Dateien Ihres Backups ersetzen.</p>
+</div>
+</div>
+</div>
+<!--End sc4-->
+
+<!--Begin sc5-->
+<div class="tabcontent" id="sc5" style="display: block;">
+<div class="textcontent">
+<div class="regularlist">
+<h2>Download</h2>
+<p>Dieses Modul steht kostenlos auf Github zum Download bereit.</p>
+<p>Freigegebene getestete Versionen für den Einsatz in Livesystemen ausschließlich auf Github unter Releases herunterladen:<br/>
+  <a href="https://github.com/zencartpro/157-modul-pdf-anhang-artikeldetailseite/releases" target="_blank"><b>https://github.com/zencartpro/157-modul-pdf-anhang-artikeldetailseite/releases</b></a></p>
+</div>
+</div>
+</div>
+<!--End sc5-->
+
+<!--Begin sc6-->
+<div class="tabcontent" id="sc6" style="display: block;">
+<div class="textcontent">
+<div class="regularlist">
+
+<h2>Unterstützen</h2>
+<p>Sie finden dieses Modul nützlich?</p>
+<p>Die deutsche Zen-Cart Version steht kostenlos zur Verfügung. Ebenso dieses Modul.<br/>
+Um unsere laufenden Kosten (Server, Lizenzgebühren, usw.) abzudecken freuen wir uns über jede Unterstützung.<br/>
+Auch für die Zeit, die für die Weiterentwicklung neuer Versionen aufgewendet wird.</p>
+<p><a href="https://donorbox.org/spende-fur-die-weiterentwicklung-der-deutschen-zen-cart-version" target="_blank"><img src="https://www.zen-cart-pro.at/zencartpro-donation-white.png" alt="Spende für die Weiterentwicklung der deutschen Zen Cart Version" title="Spende für die Weiterentwicklung der deutschen Zen Cart Version"></a></p>
+<br/><br/>
+<p>Du bist Entwickler und willst helfen, die deutsche Zen Cart Version noch besser zu machen?<br>
+  Beteilige Dich auf Github:<br>
+  <a href="https://github.com/zencartpro" target="_blank"><strong>https://github.com/zencartpro</strong></a></p>
+<br/><br/>
+</div>
+</div>
+</div>
+<!--End sc6-->
+</div>
+<div id="footer">
+Ein Modul von <a href="https://www.zen-cart-pro.at" target="_blank">www.zen-cart-pro.at</a> - Die deutsche Zen Cart Version
+</div>
+</div>
+<!--end tabcontainer-->
+<script type="text/javascript">document.getElementById('sc1').style.display = 'none';</script>
+<script type="text/javascript">document.getElementById('sc2').style.display = 'none';</script>
+<script type="text/javascript">document.getElementById('sc4').style.display = 'none';</script>
+<script type="text/javascript">document.getElementById('sc5').style.display = 'none';</script>
+<script type="text/javascript">document.getElementById('sc6').style.display = 'none';</script>
+<script type="text/javascript">ShowTabs()</script>
+<script type="text/javascript">
+// We only show the tab links if JavaScript is available/active.
+<!--
+if (document.getElementById("slidetabsmenu") != null) {
+  document.getElementById('slidetabsmenu').style.display = "block";
+}
+//-->
+</script>
+
+</body></html>
