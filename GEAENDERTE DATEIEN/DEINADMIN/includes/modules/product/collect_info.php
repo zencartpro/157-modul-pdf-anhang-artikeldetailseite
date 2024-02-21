@@ -2,11 +2,11 @@
 /**
  * Zen Cart German Specific (158 code in 157 / zencartpro adaptations)
  
- * @copyright Copyright 2003-2023 Zen Cart Development Team
+ * @copyright Copyright 2003-2024 Zen Cart Development Team
  * Zen Cart German Version - www.zen-cart-pro.at
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: collect_info.php for pdf attachment 2023-12-03 13:41:50Z webchills $
+ * @version $Id: collect_info.php for pdf attachment 2024-02-21 19:41:50Z webchills $
  */
 if (!defined('IS_ADMIN_FLAG')) {
   die('Illegal Access');
@@ -131,7 +131,7 @@ if (zen_get_categories_status($current_category_id) == 0 && $pInfo->products_sta
         <div class="input-group">
           <span class="input-group-addon">
               <?php
-              echo zen_image(DIR_WS_IMAGES . 'icon_yellow_on.gif', IMAGE_ICON_LINKED) . '&nbsp;&nbsp;';
+              echo zen_icon('linked', IMAGE_ICON_LINKED) . '&nbsp;&nbsp;';
               ?>
           </span>
           <?php
