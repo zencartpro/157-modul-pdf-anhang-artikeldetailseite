@@ -1,11 +1,10 @@
 <?php
-/**
- 
- * @copyright Copyright 2003-2022 Zen Cart Development Team
+/** 
+ * @copyright Copyright 2003-2024 Zen Cart Development Team
  * Zen Cart German Version - www.zen-cart-pro.at
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: new_product_preview.php for pdf attachment 2022-02-24 17:49:16Z webchills $
+ * @version $Id: new_product_preview.php for pdf attachment 2024-04-09 16:49:16Z webchills $
  */
 if (!defined('IS_ADMIN_FLAG')) {
   die('Illegal Access');
@@ -30,7 +29,7 @@ $zco_notifier->notify('NOTIFY_ADMIN_PRODUCT_IMAGE_UPLOADED', $products_image, $p
           $products_pdf_attachment->set_extensions(array('pdf','PDF'));
 	  $products_pdf_attachment->set_destination(DIR_FS_CATALOG_PDF_ATTACHMENTS . (isset($_POST['pdf_attachment_dir']) ? $_POST['pdf_attachment_dir'] : ''));
           if ($products_pdf_attachment->parse() && $products_pdf_attachment->save(isset($_POST['overwrite_pdf_attachment']) ? $_POST['overwrite_pdf_attachment'] : false)) {
-          $products_pdf_attachment_name = $_POST['pdf_attachment_dir'] . $products_pdf_attachment->filename;
+          $products_pdf_attachment_name = (isset($_POST['pdf_attachment_dir']) ? $_POST['pdf_attachment_dir'] : '') . $products_pdf_attachment->filename;
           } else {
             $products_pdf_attachment_name = (isset($_POST['products_previous_pdf_attachment']) ? $_POST['products_previous_pdf_attachment'] : '');
           }
